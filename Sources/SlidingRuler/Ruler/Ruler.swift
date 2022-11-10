@@ -48,7 +48,7 @@ struct Ruler: View, Equatable {
     }
     
     private func configuration(forCell cell: RulerCell) -> SlidingRulerStyleConfiguation {
-        return .init(mark: (cell.mark + markOffset) * step, bounds: bounds, step: step, offset: markOffset, formatter: formatter)
+        return .init(mark: (cell.mark + markOffset) * step, bounds: bounds, step: step, formatter: formatter)
     }
     
     static func ==(lhs: Self, rhs: Self) -> Bool {
